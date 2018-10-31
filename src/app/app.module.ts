@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaseosPageModule } from './paseos/paseos.module';
 import { BeneficiosPageModule } from './beneficios/beneficios.module';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BeneficiosPageModule } from './beneficios/beneficios.module';
   imports: [BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    BeneficiosPageModule
+    BeneficiosPageModule,
+    PaseosPageModule
   ],
   providers: [
     StatusBar,
