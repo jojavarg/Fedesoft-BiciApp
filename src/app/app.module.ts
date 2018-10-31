@@ -9,11 +9,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaseosPageModule } from './paseos/paseos.module';
+import { BeneficiosPageModule } from './beneficios/beneficios.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, PaseosPageModule],
+  imports: [BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    BeneficiosPageModule,
+    PaseosPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -22,3 +28,4 @@ import { PaseosPageModule } from './paseos/paseos.module';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
