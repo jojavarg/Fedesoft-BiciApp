@@ -1,5 +1,7 @@
 {
   "name": "fedesoft_Appbici",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
