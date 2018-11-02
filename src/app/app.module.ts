@@ -12,11 +12,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { Camera } from '@ionic-native/camera';
 
+import { PaseosPageModule } from './paseos/paseos.module';
+import { BeneficiosPageModule } from './beneficios/beneficios.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    BeneficiosPageModule,
+    PaseosPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -26,3 +33,4 @@ import { Camera } from '@ionic-native/camera';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
